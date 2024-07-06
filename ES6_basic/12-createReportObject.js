@@ -10,6 +10,6 @@ export default function createReportObject(elist) {
 
   return {
     allEmployees,
-    getNumberOfDepartments: () => getNumberOfDepartments(),
+    getNumberOfDepartments: () => departments.length,
   };
 }
