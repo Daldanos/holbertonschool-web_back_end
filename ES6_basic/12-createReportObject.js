@@ -1,15 +1,10 @@
-export default function createReportObject(elist) {
-  const departments = Object.keys(elist);
-
-  const allEmployees = {};
-  departments.forEach(department => {
-    allEmployees[department] = elist[department];
-  });
-
-  const getNumberOfDepartments = () => departments.length;
-
+export default function createReportObject(employeesList) {
   return {
-    allEmployees,
-    getNumberOfDepartments: () => departments.length,
+    allEmployees: {
+      ...employeesList
+    },
+    getNumberOfDepartments: function() {
+        return Object.keys(this.allEmployees).length;
+    }
   };
 }
