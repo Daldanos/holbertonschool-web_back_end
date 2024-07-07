@@ -1,6 +1,6 @@
 function getResponseFromAPI() {
-  return new Promise((resolve, reject) => {
-    resolve("Success response from API");
+  return new Promise((resolve) => {
+    resolve('Success response from API');
   });
 }
 
