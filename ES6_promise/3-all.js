@@ -4,11 +4,11 @@ function handleProfileSignup() {
   Promise.all([uploadPhoto(), createUser()])
     .then((values) => {
       const [photo, user] = values;
-      console.log(`First Name: ${user.firstName} Last Name: ${user.lastName}`);
+      console.log(`${photo.body} ${user.firstName} ${user.lastName}`);
     })
     .catch(() => {
       console.log('Signup system offline');
     });
 }
 
-handleProfileSignup();
+export default handleProfileSignup;
