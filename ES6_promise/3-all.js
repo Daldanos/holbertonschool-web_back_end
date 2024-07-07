@@ -6,7 +6,7 @@ async function handleProfileSignup() {
     console.log(`photo-profile-${photo} ${user.firstName} ${user.lastName}`);
   } catch (error) {
     console.error("Signup system offline");
-    }
+  }
 }
 
 export default handleProfileSignup;
