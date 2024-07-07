@@ -15,7 +15,7 @@ export default class Car {
     return this._brand;
   }
 
-    get motor() {
+  get motor() {
     return this._motor;
   }
 
