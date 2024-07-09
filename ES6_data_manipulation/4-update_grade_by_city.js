@@ -6,13 +6,12 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
       if (foundGrade) {
         return {
           ...student,
-          grade: foundGrade.grade
-        };
-      } else {
-        return {
-          ...student,
-          grade: 'N/A'
+          grade: foundGrade.grade,
         };
       }
+      return {
+        ...student,
+        grade: 'N/A',
+      };
     });
 }
